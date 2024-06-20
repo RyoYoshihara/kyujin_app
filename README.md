@@ -33,7 +33,7 @@
 ## Installation
 1. **リポジトリからプロジェクトをクローン:**
     ```bash
-    git clone https://github.com/yourusername/MyFlutterApp.git
+    git clone https://github.com/RyoYoshihara/kyujin_app.git
     ```
    
 2. **クローンしたリポジトリへ移動:**
