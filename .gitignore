@@ -1,0 +1,110 @@
+# Dart/Pub related
+.dart_tool/
+.packages
+.pub/
+build/
+flutter_*.png
+.dart_tool/
+.packages
+flutter_export_environment.sh
+
+# Created by pub
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+flutter_export_environment.sh
+
+# Project-specific files
+.idea/
+.settings/
+.vscode/
+*.iml
+
+# Android specific
+android/app/*.keystore
+android/local.properties
+android/app/build/
+android/.gradle/
+android/.idea/
+android/.settings/
+android/*.iml
+android/build/
+
+# iOS specific
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Runner.xcworkspace/
+ios/Runner.xcconfig
+ios/Flutter/Debug.xcconfig
+ios/Flutter/Release.xcconfig
+ios/build/
+
+# Xcode specific
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.xcworkspace/
+
+# Mac-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Icon must end with two \r
+Icon
+
+# Icon\r
+__MACOSX/
+
+# Hidden files
+._*
+
+# Symstore files
+*.swp
+*.swo
+.svn/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.old
+
+# Logs
+*.log
+
+# Profiling
+*.pid
+
+# Virtual Environment
+.venv/
+.venv.bak/
+
+# Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Secrets
+secrets/
+.secret
+.secret.*
