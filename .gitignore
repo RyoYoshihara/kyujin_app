@@ -44,6 +44,8 @@ ios/Runner.xcconfig
 ios/Flutter/Debug.xcconfig
 ios/Flutter/Release.xcconfig
 ios/build/
+ios/Podfile
+ios/Podfile.lock
 
 # Xcode specific
 *.pbxuser

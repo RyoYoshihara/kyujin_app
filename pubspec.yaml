@@ -11,6 +11,10 @@ dependencies:
 
 
   cupertino_icons: ^1.0.6
+  shared_preferences: ^2.2.3
+  flutter_riverpod: ^2.5.1
+  build_runner: ^2.4.11
+  freezed: ^2.5.2
 
 dev_dependencies:
   flutter_test:
