@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:kyujin_app/router/route_generator.dart';
 import 'package:kyujin_app/view/home_page/home_page.dart';
 
+import 'core/colors_manager.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,6 +45,11 @@ class _MyAppState extends ConsumerState<MyApp> {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          color: Colors.white,
+          elevation: 0.0,
+        ),
+        scaffoldBackgroundColor: ColorsManager.black
       ),
     );
 
