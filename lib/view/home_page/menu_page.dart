@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kyujin_app/core/component/menu_contents.dart';
+import 'package:kyujin_app/core/menu_contents.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MenuPage extends ConsumerWidget {
   const MenuPage({super.key});
@@ -131,19 +132,19 @@ class MenuPage extends ConsumerWidget {
                     MenuItem(
                         text: "利用規約",
                         onTap: (){
-
+                          launchUrl(Uri.parse('https://google.com/'));
                         }
                     ),
                     MenuItem(
                         text: "個人情報の取り扱い",
                         onTap: (){
-
+                          launchUrl(Uri.parse('https://google.com/'));
                         }
                     ),
                     MenuItem(
                         text: "利用者情報の外部送信について",
                         onTap: (){
-
+                          launchUrl(Uri.parse('https://google.com/'));
                         }
                     ),
                   ]

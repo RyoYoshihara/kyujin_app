@@ -15,6 +15,7 @@ dependencies:
   flutter_riverpod: ^2.5.1
   build_runner: ^2.4.11
   freezed: ^2.5.2
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
