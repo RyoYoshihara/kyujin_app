@@ -1,25 +1,33 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 part 'profile.freezed.dart';
 part 'profile.g.dart';
+
+@freezed
+class ProfileState with _$ProfileState {
+  factory ProfileState({
+    @Default(AsyncLoading()) AsyncValue<Profile> profile,
+  }) = _ProfileState;
+}
 
 @freezed
 class Profile with _$Profile {
   const factory Profile({
     required User user,
     required Address address,
-    required String tel,
-    required String email,
-    required String birthDay,
-    required int sex,
+    @Default("") String tel,
+    @Default("") String email,
+    @Default("") String birthDay,
+    @Default(0) int sex,
     required LastAcademic lastAcademic,
     required Language language,
-    required String qualification,
-    required int spouse,
-    required int income,
-    required List<Corporate> corporate,
-    required List<String> industry,
-    required List<String> occupation,
+    @Default("") String qualification,
+    @Default(0) int spouse,
+    @Default(0) int income,
+    @Default([]) List<Corporate> corporate,
+    @Default([]) List<String> industry,
+    @Default([]) List<String> occupation,
   }) = _Profile;
 
   factory Profile.fromJson(Map<String, dynamic> json) => _$ProfileFromJson(json);
@@ -28,10 +36,10 @@ class Profile with _$Profile {
 @freezed
 class User with _$User {
   const factory User({
-    required String family,
-    required String name,
-    required String kanaFamily,
-    required String kanaName,
+    @Default("") String family,
+    @Default("") String name,
+    @Default("") String kanaFamily,
+    @Default("") String kanaName,
   }) = _User;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
@@ -40,8 +48,8 @@ class User with _$User {
 @freezed
 class Address with _$Address {
   const factory Address({
-    required String prefecture,
-    required String other,
+    @Default("") String prefecture,
+    @Default("") String other,
   }) = _Address;
 
   factory Address.fromJson(Map<String, dynamic> json) => _$AddressFromJson(json);
@@ -50,10 +58,10 @@ class Address with _$Address {
 @freezed
 class LastAcademic with _$LastAcademic {
   const factory LastAcademic({
-    required String name,
-    required String category,
-    required String subject,
-    required String graduation,
+    @Default("") String name,
+    @Default("") String category,
+    @Default("") String subject,
+    @Default("") String graduation,
   }) = _LastAcademic;
 
   factory LastAcademic.fromJson(Map<String, dynamic> json) => _$LastAcademicFromJson(json);
@@ -62,10 +70,10 @@ class LastAcademic with _$LastAcademic {
 @freezed
 class Language with _$Language {
   const factory Language({
-    required String motherTongue,
-    required String other,
-    required String toeic,
-    required String toefl,
+    @Default("") String motherTongue,
+    @Default("") String other,
+    @Default("") String toeic,
+    @Default("") String toefl,
   }) = _Language;
 
   factory Language.fromJson(Map<String, dynamic> json) => _$LanguageFromJson(json);
@@ -74,10 +82,10 @@ class Language with _$Language {
 @freezed
 class Corporate with _$Corporate {
   const factory Corporate({
-    required String name,
-    required String position,
-    required String start,
-    required String end,
+    @Default("") String name,
+    @Default("") String position,
+    @Default("") String start,
+    @Default("") String end,
   }) = _Corporate;
 
   factory Corporate.fromJson(Map<String, dynamic> json) => _$CorporateFromJson(json);

@@ -52,7 +52,7 @@ class HomePageState extends ConsumerState<HomePage> {
 
 class _BottomNavigationBar extends ConsumerWidget {
   const _BottomNavigationBar(
-      {super.key, required this.selectedIndex, required this.onTap});
+      {required this.selectedIndex, required this.onTap});
   final int selectedIndex;
   final Function(int) onTap;
 
