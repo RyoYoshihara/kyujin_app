@@ -26,7 +26,6 @@ class ProfileViewModel extends ViewModel<ProfileState>{
 
     try {
       final Profile result = await ProfileRepo().getProfile(userID);
-      print(result);
       state = state.copyWith(profile: AsyncData(result));
     } on ApiErrorModel catch (error, stackTrace) {
       final finishErrorHandling = await error.apiErrorCommonHandling();

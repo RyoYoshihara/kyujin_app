@@ -30,34 +30,34 @@ class ProfileRepo {
         },
         "tel": "09035238198",
         "email": "test@gmail.com",
-        "birthDay": "1988/05/10",
-        "sex": 0,
+        "birthDay": "1988-05-10",
+        "sex": 1,
         "lastAcademic": {
           "name": "草加市立草加",
           "category": "高等学校",
           "subject": "普通科",
-          "graduation": "2007年 3月 卒業"
+          "graduation": "2007年3月 卒業"
         },
         "language": {
           "motherTongue": "日本語",
           "other": "北京語：日常会話",
-          "toeic": "未入力",
-          "toefl": "未入力"
+          "toeic": "0",
+          "toefl": "0"
         },
-        "qualification": "OracleBronze",
+        "qualification": "",
         "spouse": 0,
         "income": 500,
         "corporate": [
           {
             "name": "株式会社VSTA",
             "position": "正社員",
-            "start": "2015年6月",
-            "end": "2023年5月"
+            "start": "2015-06-01",
+            "end": "2023-05-01"
           },
           {
             "name": "株式会社ISECT",
             "position": "正社員",
-            "start": "2023年6月",
+            "start": "2023-06-01",
             "end": "在籍中"
           }
         ],
