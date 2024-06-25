@@ -46,7 +46,12 @@
     flutter pub get
     ```
 
-4. **Run the application:**
+4. **Run build runner:**
+    ```bash
+    flutter pub run build_runner build --delete-conflicting-outputs
+    ```
+
+5. **Run the application:**
     ```bash
     flutter run
     ```

@@ -20,6 +20,10 @@ flutter_export_environment.sh
 .vscode/
 *.iml
 
+# freeze
+*.freezed.dart
+*.g.dart
+
 # Android specific
 android/app/*.keystore
 android/local.properties
