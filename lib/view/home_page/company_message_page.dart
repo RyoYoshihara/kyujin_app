@@ -40,7 +40,7 @@ class _CompanyMessagePageState extends ConsumerState<_CompanyMessagePageContent>
         appBar: AppBar(
           backgroundColor: Colors.black,
           centerTitle: true,
-          toolbarHeight: 60,
+          toolbarHeight: 20,
           bottom: TabBar(
             controller: _tabController,
             indicator: const UnderlineTabIndicator(
