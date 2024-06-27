@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'package:kyujin_app/view/message_page/from_agent_page.dart';
+import 'package:kyujin_app/view/message_page/from_company_page.dart';
+
 class CompanyMessagePage extends ConsumerWidget {
   const CompanyMessagePage({super.key});
 
@@ -49,11 +52,18 @@ class _CompanyMessagePageState extends ConsumerState<_CompanyMessagePageContent>
             labelColor: Colors.lime,
             unselectedLabelColor: Colors.white,
             labelStyle: const TextStyle(fontSize: 16),
-            tabs: const <Widget>[
+            tabs: const [
               Tab(text: "企業から"),
               Tab(text: "エージェントから"),
             ],
           ),
+        ),
+        body: TabBarView(
+          controller: _tabController,
+          children: const [
+            FromCompanyPage(),
+            FromAgentPage()
+          ],
         ),
       ),
     );
