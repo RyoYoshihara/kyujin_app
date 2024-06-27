@@ -100,7 +100,7 @@ class _BottomNavigationBar extends ConsumerWidget {
           buildBottomNavigationBarItem('気になる', 1),
           buildBottomNavigationBarItem('メッセージ', 2),
           buildBottomNavigationBarItem('プロフィール', 3),
-          buildBottomNavigationBarItem('メッセージ', 4),
+          buildBottomNavigationBarItem('その他', 4),
         ],
         currentIndex: selectedIndex,
         backgroundColor: Colors.grey[800],

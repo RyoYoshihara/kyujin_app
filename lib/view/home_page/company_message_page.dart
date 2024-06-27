@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:kyujin_app/view/message_page/from_agent_page.dart';
-import 'package:kyujin_app/view/message_page/from_company_page.dart';
+import '../message_page/from_agent_page.dart';
+import '../message_page/from_company_page.dart';
 
 class CompanyMessagePage extends ConsumerWidget {
   const CompanyMessagePage({super.key});

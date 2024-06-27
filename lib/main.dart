@@ -36,7 +36,7 @@ class _MyAppState extends ConsumerState<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:false,
-      title: 'Flutter Demo',
+      title: 'Recruit App',
       home: const HomePage(),
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.onGenerate,
