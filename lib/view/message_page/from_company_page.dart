@@ -5,6 +5,7 @@ import 'package:kyujin_app/model/message_page/from_company.dart';
 
 import '../../core/dialog_manager.dart';
 import '../../core/image_manager.dart';
+import '../../core/modal_manager.dart';
 import '../../viewmodel/message_page/from_company_page_viewmodel.dart';
 
 const  List<String> choices01 = <String>['指定なし', '未読', '未返信', '非表示'];
@@ -51,6 +52,7 @@ class MessageList extends ConsumerWidget {
               SizedBox(
                 height: 60,
                 child: SingleChildScrollView(
+                  physics: const AlwaysScrollableScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
@@ -78,7 +80,7 @@ class MessageList extends ConsumerWidget {
                           side: const BorderSide(color: Colors.green),
                         ),
                         onPressed: () {
-                          showPickerDialog(context,choices01);
+                          showModal(context);
                         },
                         child: const Text(
                           '職種',
