@@ -201,8 +201,8 @@ Widget _messageWidget(FromCompany fromCompany) {
         child: Row(
           children: [
             Container(
-              width: 100.0,
-              height: 100.0,
+              width: 90.0,
+              height: 90.0,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: fromCompany.imageUrl.isNotEmpty
