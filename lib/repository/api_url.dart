@@ -12,6 +12,9 @@ class AppUrl {
     return '$baseUrl/$path';
   }
 
+  //プロフィール取得
   static var getProfileEndpoint = vUrl(path: 'profile');
 
+  //メッセージ情報
+  static var getMessageFromCompanyEndpoint = vUrl(path: 'fromCompany');
 }
