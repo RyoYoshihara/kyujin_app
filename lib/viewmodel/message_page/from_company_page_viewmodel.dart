@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../model/message_page/from_company.dart';
 import '../../repository/api_error_model.dart';
 import '../../repository/message_page/from_company_repo.dart';
-import '../../view/view_model.dart';
+import '../view_model.dart';
 
 final fromCompanyViewModelProvider =
 StateNotifierProvider<FromCompanyViewModel, FromCompanyState>(

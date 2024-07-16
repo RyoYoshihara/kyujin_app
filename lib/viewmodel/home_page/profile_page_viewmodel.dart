@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../model/home_page/profile.dart';
 import '../../repository/api_error_model.dart';
 import '../../repository/home_page/profile_repo.dart';
-import '../../view/view_model.dart';
+import '../view_model.dart';
 
 final profileViewModelProvider =
     StateNotifierProvider<ProfileViewModel, ProfileState>(
