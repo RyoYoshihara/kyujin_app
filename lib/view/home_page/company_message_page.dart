@@ -60,7 +60,7 @@ class _CompanyMessagePageState extends ConsumerState<_CompanyMessagePageContent>
         ),
         body: TabBarView(
           controller: _tabController,
-          children: const [
+          children: [
             FromCompanyPage(),
             FromAgentPage()
           ],

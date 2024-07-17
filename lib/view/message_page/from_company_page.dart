@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:kyujin_app/model/message_page/from_company.dart';
 
 import '../../core/dialog_manager.dart';
 import '../../core/image_manager.dart';
 import '../../core/modal_manager.dart';
+import '../../model/message_page/from_company.dart';
 import '../../viewmodel/message_page/from_company_page_viewmodel.dart';
 
 const  List<String> choices01 = <String>['指定なし', '未読', '未返信', '非表示'];

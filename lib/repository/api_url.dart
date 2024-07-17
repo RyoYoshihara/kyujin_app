@@ -17,4 +17,5 @@ class AppUrl {
 
   //メッセージ情報
   static var getMessageFromCompanyEndpoint = vUrl(path: 'fromCompany');
+  static var getMessageFromAgentEndpoint = vUrl(path: 'fromAgent');
 }
