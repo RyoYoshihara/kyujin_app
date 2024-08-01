@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -60,7 +59,7 @@ class _CompanyMessagePageState extends ConsumerState<_CompanyMessagePageContent>
         ),
         body: TabBarView(
           controller: _tabController,
-          children: [
+          children: const [
             FromCompanyPage(),
             FromAgentPage()
           ],

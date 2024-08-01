@@ -2,9 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/dialog_manager.dart';
 import '../../core/image_manager.dart';
-import '../../core/modal_manager.dart';
 import '../../model/message_page/from_company.dart';
 import '../../viewmodel/message_page/from_company_page_viewmodel.dart';
 
@@ -14,7 +12,6 @@ class FromCompanyPage extends ConsumerWidget {
   const FromCompanyPage({super.key});
 
   Future<void> _refresh() async {
-
     await Future.delayed(const Duration(seconds: 2));
   }
 
@@ -49,6 +46,7 @@ class MessageList extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              /*
               SizedBox(
                 height: 60,
                 child: SingleChildScrollView(
@@ -183,6 +181,7 @@ class MessageList extends ConsumerWidget {
                 thickness: 1.0,
                 color: Colors.grey,
               ),
+               */
               ...List.generate(
                   messages.length,
                       (index) => _messageWidget(messages[index])

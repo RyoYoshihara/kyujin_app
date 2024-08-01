@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -93,7 +91,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                        onPressed: ()=> print(1),
+                        onPressed: ()=> {},
                         child: SizedBox(
                           width: double.infinity,
                           child: Padding(
@@ -111,7 +109,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                                 ),
                                 const SizedBox(height: 5),
                                 Text(
-                                  "${profileInfo.user?.family} ${profileInfo.user?.name}",
+                                  "${profileInfo.user.family} ${profileInfo.user.name}",
                                   style: const TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w800,
@@ -133,7 +131,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -151,7 +149,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                               ),
                               const SizedBox(height: 5),
                               Text(
-                                "${profileInfo.address?.prefecture}${profileInfo.address?.other}",
+                                "${profileInfo.address.prefecture}${profileInfo.address.other}",
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -173,7 +171,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -191,7 +189,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                               ),
                               const SizedBox(height: 5),
                               Text(
-                                "${profileInfo.tel}",
+                                profileInfo.tel,
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -245,7 +243,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                               ),
                               const SizedBox(height: 5),
                               Text(
-                                "${profileInfo.email}",
+                                profileInfo.email,
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -267,7 +265,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -307,7 +305,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -347,7 +345,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -365,10 +363,10 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                               ),
                               const SizedBox(height: 5),
                               Text(
-                                "${profileInfo.lastAcademic?.name}"
-                                "${profileInfo.lastAcademic?.category} "
-                                "${profileInfo.lastAcademic?.subject} "
-                                "${profileInfo.lastAcademic?.graduation} ",
+                                "${profileInfo.lastAcademic.name}"
+                                "${profileInfo.lastAcademic.category} "
+                                "${profileInfo.lastAcademic.subject} "
+                                "${profileInfo.lastAcademic.graduation} ",
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -390,7 +388,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -408,7 +406,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                               ),
                               const SizedBox(height: 5),
                               Text(
-                                "母国語：${profileInfo.language?.motherTongue}",
+                                "母国語：${profileInfo.language.motherTongue}",
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -416,7 +414,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                                 ),
                               ),
                               Text(
-                                "・${profileInfo.language?.other}",
+                                "・${profileInfo.language.other}",
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -424,7 +422,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                                 ),
                               ),
                               Text(
-                                "TOEIC：${profileInfo.language?.toeic == "0" ? "未入力" : profileInfo.language?.toeic.toString()}",
+                                "TOEIC：${profileInfo.language.toeic == "0" ? "未入力" : profileInfo.language.toeic.toString()}",
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -432,7 +430,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                                 ),
                               ),
                               Text(
-                                "TOEFL：${profileInfo.language?.toefl == "0" ? "未入力" : profileInfo.language?.toeic.toString()}",
+                                "TOEFL：${profileInfo.language.toefl == "0" ? "未入力" : profileInfo.language.toeic.toString()}",
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -454,7 +452,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -481,7 +479,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                                   ),
                                 )
                               : Text(
-                                "${profileInfo.qualification}",
+                                profileInfo.qualification,
                                 style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w800,
@@ -503,7 +501,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
@@ -543,7 +541,7 @@ class _ProfilePageContentState extends ConsumerState<_ProfilePageContent>{
                           borderRadius: BorderRadius.circular(0), // 角の半径を16.0に設定
                         ),
                       ),
-                      onPressed: ()=> print(1),
+                      onPressed: ()=> {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Padding(
